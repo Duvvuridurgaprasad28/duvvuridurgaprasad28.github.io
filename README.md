@@ -139,7 +139,7 @@ I’m currently open to new opportunities in Data Science, MLOps, or Machine Lea
 
 * 📧 **Email:** [satyadurgaprasad28@gmail.com](mailto:satyadurgaprasad28@gmail.com)  
 * 🌐 **LinkedIn:** [linkedin.com/in/duvvuri-durga-prasad-dp](https://www.linkedin.com/in/duvvuri-durga-prasad-dp)  
-* 💼 **Portfolio Website:** *Coming Soon*  
+* 💼 **Portfolio Website:** [duvvuridurgaprasad28.github.io](https://duvvuridurgaprasad28.github.io/)
 * 💻 **GitHub:** [github.com/Duvvuridurgaprasad28](https://github.com/Duvvuridurgaprasad28)
 
 ---
