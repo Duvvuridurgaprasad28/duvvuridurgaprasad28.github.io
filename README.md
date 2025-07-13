@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-  <img src="root/assets/images/banner.png" alt="Banner" style="border-radius: 10px;">
+  <img src="docs/assets/images/banner.png" alt="Banner" style="border-radius: 10px;">
 </p>
 
 ---
