@@ -1,0 +1,922 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #e3f2fd, #bbdefb);
+  color: #000000; /* Make sure the text contrasts well */
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+/* Section general spacing */
+section {
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+/* Navigation */
+nav {
+  background: linear-gradient(to right, #e3f2fd, #bbdefb) !important;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+nav a {
+  color:#2a9d8f;
+  text-decoration: none;
+  font-weight: 800;
+  transition: color 0.3s;
+  cursor: pointer;
+
+}
+
+nav a:hover {
+  color:#e9c46a;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #2a9d8f;
+  margin-top: -1px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #1e293b;  /* dark blue-gray */
+  color: #f8fafc;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom:0 auto  1rem auto;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Summary Card Style */
+.summary-card {
+  background: #fafafa;
+  color: #222;
+  padding: 1rem 1.5rem;
+  margin: 1rem auto 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  max-width: 900px;
+  text-align: left;
+  font-size: 1.10rem;
+  font-style: normal;
+}
+
+/* Main container */
+main {
+  max-width: 1000px;
+  margin: 2rem auto 4rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Section headings */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #2a9d8f;
+  padding-bottom: 0.3rem;
+  color: #333;
+  text-align: left;
+}
+
+/* About Me section */
+#about {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#about p {
+  margin-bottom: 0.6rem;
+  line-height: 1.45;
+  font-size: 1rem;
+  color: #444;
+  text-align: justify;
+  transition: all 0.3s ease;
+}
+
+#about p:hover {
+  color: #222;
+  background-color: #f0f8ff;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* Fix for full-width column */
+#about .col-md-10 {
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+}
+
+/* Title slight adjustment */
+#about .section-title {
+  transform: translateX(-0.2rem);
+  transition: color 0.3s ease;
+}
+
+/* Optional hover effect for section title */
+#about .section-title:hover {
+  color: #0077b5; /* LinkedIn blue for visual interest */
+}
+
+
+/* Education & Certifications */
+#education {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 1.5rem; /* Add space below the entire section */
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  border-left: 3px solid #2a9d8f;
+  margin-top: 1rem;
+}
+
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: scale(1.015);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+}
+
+/* Timeline bullet */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background-color: #2a9d8f;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 8px rgba(42, 157, 143, 0.7);
+}
+
+/* Timeline title */
+.timeline-item h5 {
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.timeline-item h5:hover {
+  color: #2a9d8f;
+}
+
+/* Subtitle (date and location) */
+.timeline-item .text-muted {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Timeline description */
+.timeline-item p {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.timeline-item p:hover {
+  color: #222;
+}
+
+/* Optional hover effect for section title */
+#education .section-title:hover {
+  color: #0077b5; /* LinkedIn blue for visual interest */
+}
+
+
+/* Timeline list (certifications) */
+#education ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+#education ul li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+#education ul li:hover {
+  color: #000;
+}
+
+/* Muted/italic style for specific list items */
+#education ul li.text-muted {
+  font-style: italic;
+  color: #999;
+}
+
+
+/* Project Card Style */
+.project-category {
+  border-bottom: 3px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 40px;
+  font-size: 1.5em;
+  color: #333;
+  padding-left: 20px; /* <-- Increased left padding */
+}
+
+.project-category:hover {
+  color: #17aed8; /* <-- Hover color for section title */
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 20px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.section-title:hover {
+  color: #0077b5;
+}
+
+
+.badge {
+  background-color: #007bff;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-right: 6px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.badge.mlops { background-color: #6f42c1; }  /* purple */
+.badge.deployed { background-color: #28a745; }  /* green */
+.badge.predictive-modeling { background-color: #e67e22; }  /* orange */
+
+.badge.app-streamlit { background-color: #00bc8c; }  /* teal */
+.badge.app-flask { background-color: #17a2b8; }      /* cyan */
+.badge.app-notebook { background-color: #6c757d; }   /* gray */
+
+.badge.model-rf { background-color: #343a40; }       /* dark gray */
+.badge.model-logreg { background-color: #6610f2; }    /* indigo */
+.badge.model-xgb { background-color: #ff4136; }       /* bright red */
+.badge.task-nlp { background-color: #6f42c1; }       /* purple */
+
+.badge.task-eda { background-color: #20c997; }       /* mint green */
+.badge.task-visual { background-color: #e67e22; }    /* orange */
+.badge.task-classification { background-color: #007bff; } /* blue */
+.badge.task-regression { background-color: #fd7e14; } /* orange-red */
+
+.badge.devops-cicd { background-color: #e83e8c; }    /* pink */
+.badge.devops-docker { background-color: #0db7ed; }  /* Docker blue */
+.badge.devops-aws { background-color: #ff9900; }     /* AWS orange */
+
+/* Project Card Style */
+.project {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: box-shadow 0.3s, transform 0.3s;
+  cursor: default;
+  text-align: left;
+}
+
+.project:hover {
+  box-shadow: 0 8px 22px rgba(230, 126, 34, 0.13), 0 2px 6px rgba(0,0,0,0.07);
+  transform: translateY(-5px) scale(1.015);
+}
+
+.project h3 {
+  margin-bottom: 0.6rem;
+  color: #2a9d8f;
+  font-size: 1.75rem;
+}
+
+.project h3 {
+  margin-top: 1.5rem;
+}
+
+.project p {
+  margin-bottom: 0.8rem;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.project-meta {
+  font-style: italic;
+  color: #999;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.project img {
+  display: block;                  /* Makes the image respect margin rules */
+  margin: 0 auto 15px auto;        /* Top, Right/Left auto for centering, Bottom */
+  width: 100%; /* Changed from 120% */
+  max-width: 100%;
+  object-fit: cover;  
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+.badge-wrapper {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap; /* In case it needs to wrap on smaller screens */
+  margin-bottom: 12px;
+}
+
+.technical-details {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.technical-details.open {
+  display: block;
+}
+
+/* Action Buttons */
+.project-actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.github-icon {
+  color: #000;
+}
+.btn-outline-primary:hover .github-icon {
+  color: white; /* or keep it #000 if you want a fixed color */
+}
+.btn-outline-primary {
+  color: #000; /* black text */
+  background-color: transparent;
+  border: 2px solid #000; /* black border */
+}
+
+.btn-outline-primary:hover {
+  background-color: #000; /* black background on hover */
+  color: #fff;            /* white text on hover */
+}
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af;
+}
+
+.btn:hover {
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.15);
+}
+
+@media (max-width: 480px) {
+  .project-actions {
+    flex-direction: column;
+  }
+}
+
+/* live-demo CSS */
+.github-link {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.github-link:hover,
+.github-link:focus {
+  border-color: #e67e22;
+  color: #e67e22;
+  outline: none;
+}
+
+.live-demo {
+  display: inline-block;
+  margin-left: 1rem;
+  background: #2a9d8f;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+  cursor: pointer;
+  border: none;
+  }
+
+.live-demo:hover,
+.live-demo:focus {
+  background: #cf6c17;
+  outline: none;
+}
+.live-demo:focus {
+  outline: none;
+  background: #cf6c17; /* same as hover background */
+  color: white;
+}
+
+ /* Additional minor styles for layout */
+.btn {
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-outline-primary {
+  border: 2px solid #007bff;
+  color: #007bff;
+  background: transparent;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: #007bff;
+  color: white;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #0056b3;
+  outline: none;
+}
+
+.project-actions > * {
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+
+/* Toggle buttons */
+.toggle-btn {
+  background: transparent;
+  border: none;
+  color: #e67e22;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Technical Details (merged, animated, and styled) */
+.technical-details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding-top: 0;
+  transition: max-height 0.5s ease, opacity 0.4s ease, padding-top 0.3s ease;
+}
+
+.technical-details.open {
+  max-height: 500px; /* Adjust based on longest content */
+  opacity: 1;
+  padding-top: 15px;
+}
+
+.technical-details h4 {
+  margin-bottom: 0.5rem;
+  color: #0d6efd;
+  font-size: 1.1rem;
+}
+
+.project ul {
+  list-style: none;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  padding-left: 0; /* or 1.5rem if you want indentation */
+}
+
+.project ul li::before {
+  content: ""; /* leave empty, allow emoji from HTML */
+  margin-right: 0.5em;
+}
+
+
+/* Featured Projects Layout */
+#featured-projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #e0e0e0, #bdbdbd);
+  color: #000;
+}
+
+/* Heading for Featured Projects */
+#featured-projects .section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: left;
+  border-bottom: 3px solid #4fc3f7;
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Optional hover effect for section title */
+#featured-projects .section-title:hover {
+  color: #0077b5; /* LinkedIn blue for visual interest */
+}
+
+.featured-project .card-title {
+  color: #2a9d8f;
+}
+
+
+i.custom-icon {
+  color: #000 !important;
+}
+
+/* Project Card Container */
+.featured-project {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+  background: #fff; /* white background inside project cards for contrast */
+}
+
+/* Hover Animation */
+.featured-project:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Card Content Area */
+.featured-project .card-body {
+  padding: 1.2rem;
+  border-radius: 12px;
+}
+
+/* Description Text */
+.card-description {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* Skills grid */
+/* Skills section */
+#skills ul.skills-grid {
+  list-style: none;
+  padding: 0;
+  columns: 2;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+#skills ul.skills-grid li {
+  background: #a6bce1 ;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.skills-grid li:hover {
+  background: blue;
+  transform: translateY(-3px) scale(1.03);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Soft Skills */
+#soft-skills {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 2rem;   /* Enough bottom space */
+}
+#soft-skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#soft-skills li {
+  background: #a6bce1;
+  color: rgb(30, 30, 29);
+  border-left: 4px solid #2232e6;
+  margin-bottom: 1.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(230, 126, 34, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#soft-skills li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#resume {
+  text-align: center;
+  margin: 2rem 0;
+  background: #acb788;
+}
+
+#resume {
+  background: linear-gradient(to right, #bbdffc, #ddc070);
+  color: #000; /* Adjust if needed for readability */
+}
+
+.download-btn {
+  background: #007bff; /* Bootstrap blue */
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  font-size: 1.1rem;
+}
+
+.download-btn:hover {
+  background: #0056b3; /* Darker blue for hover */
+}
+
+/* Neon green arrow */
+.download-arrow {
+  font-size: 1.4rem;
+  color: #39ff14;
+  text-shadow:
+    0 0 5px #39ff14,
+    0 0 10px #39ff14,
+    0 0 20px #39ff14,
+    0 0 40px #0fa,
+    0 0 80px #0fa;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.fas.fa-eye {
+  margin-right: 0.25rem; /* smaller margin */
+}
+
+/* Contact form */
+#contact {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-top: 0.50rem;   /* 🪶 Gentle top padding */
+  padding-bottom: -5.0rem;   /* Enough bottom space */
+  margin-top: -0.25rem;   /* Optional: tuck it up tighter */
+
+}
+#contact form {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem; /* 🛠 Reduced bottom spacing */
+}
+
+#contact label {
+  margin: 0.8rem 0 0.3rem;
+  font-weight: 600;
+}
+
+#contact input,
+#contact textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+#contact button {
+  margin-top: 1rem;
+  background: #c5610a;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#contact button:hover {
+  background: #cf6c17;
+}
+
+#thank-you-message {
+  text-align: center;
+  margin-top: 1rem;
+  color: #28a745;
+  font-weight: 600;
+  display: none;
+}
+
+/* 📬 Contact Note */
+.contact-note {
+  margin-top: 0.5rem; /* 🛠 Tightened top spacing */
+  text-align: center;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* "Get in Touch" section */
+#get-in-touch {
+  max-width: 1400px;
+  margin-top: -2.5rem;        /* Pulls section upward */
+  padding-top: 0;           /* No internal spacing needed at top */
+  padding-bottom: 3rem;     /* Keeps the comfy footer spacing */
+}
+
+#get-in-touch h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+#get-in-touch p {
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 1rem;
+}
+
+#get-in-touch .btn {
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+/* Optional hover effect for section title */
+#get-in-touch .section-title:hover {
+  color: #0077b5; /* LinkedIn blue for visual interest */
+}
+
+/* Social Links */
+.social-links {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.social-links a {
+  color: #e67e22;
+  margin: 0 0.5rem;
+  font-size: 1.7rem;
+  transition: color 0.2s;
+  vertical-align: middle;
+}
+.social-links a:hover {
+  color: #cf6c17;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  padding: 1rem 20px;  /* reduce padding sides as needed */
+  background: #222;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  box-sizing: border-box; /* ensure padding doesn’t break layout */
+}
+
+
+/* Responsive styles */
+@media (max-width: 800px) {
+  header h1, .summary-card, main, #about, #education, #soft-skills, #contact {
+    max-width: 98vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+}
+
+@media (max-width: 800px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .summary-card, .project {
+    padding: 1.2rem 1rem;
+    font-size: 1rem;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 1rem;
+  }
+  header {
+    padding: 2rem 0.5rem 1.5rem 0.5rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  .summary-card, .project {
+    padding: 1rem 0.5rem;
+    font-size: 0.97rem;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  section {
+    margin-bottom: 1.2rem;
+  }
+  #get-in-touch h2 {
+    font-size: 1.5rem;
+  }
+
+  #get-in-touch p {
+    font-size: 0.95rem;
+  }
+}
